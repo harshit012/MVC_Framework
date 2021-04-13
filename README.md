@@ -6,3 +6,10 @@ MVC Stands for:
 * M - Model
 * V - View
 * C - Controller
+
+## Benifits of using this Framework
+* Data-binding − It is the automatic synchronization of data between model and view components.
+* Controller − These are JavaScript functions bound to a particular scope.
+* Routing − It is concept of switching views.
+* Expression evaluation - User can write some expression in  {{{ }}}
+* Easy to use & Faster execution.
