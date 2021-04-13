@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<title>mvc_example</title>
+<script src='js/mvc_framework.js'></script>
+<script src='js/abc.js'></script>
+</head>
+<body>
+<center>
+<div tmmvc_if="mode=='W'" >
+<center>
+<h1>Welcome</h1>
+<br>
+<button type='button' tmmvc_click='displayAddForm'>Add Student</button>&nbsp;&nbsp;&nbsp;<button type='button' tmmvc_click='displayUpdateForm'>Update Student</button>&nbsp;&nbsp;&nbsp;<button type='button' tmmvc_click='displayDeleteForm'>Delete Student</button>
+<br>
+<button>
+</center>
+</div>
+
+<div tmmvc_if="mode=='A'" >
+<h1>{{{formName}}} Form</h1>
+<br>
+<form action='#' onsubmit='return frmsbt(this)'>
+Name&nbsp;
+<input type='text' id='name' name='name' tmmvc_attribute='name' tmmvc_bind_to='value'>
+<br><br>
+Gender&nbsp;
+<input type='radio' id='male' name='gender' value='M' tmmvc_attribute='gender' tmmvc_bind_to='value'>Male
+&nbsp;&nbsp;&nbsp;&nbsp;
+<input type='radio' id='female' name='gender' value='F' tmmvc_attribute='gender' tmmvc_bind_to='value'>Female
+&nbsp;&nbsp;&nbsp;&nbsp;
+<input type='radio' id='transgender' name='gender' value='T' tmmvc_attribute='gender' tmmvc_bind_to='value'>Transgender
+<br><br>
+City&nbsp;
+<td><select id='city' name='city' tmmvc_attribute='city' tmmvc_bind_to='selectedIndex'>
+<option value='-1'>Select City</option>
+<option value='1'>Ujjain</option>
+<option value='2'>Dewas</option>
+<option value='3'>Indore</option>
+<option value='4'>Bhopal</option>
+<option value='5'>Jaipur</option>
+</select>
+<br><br>
+Handicaped &nbsp;</td>
+<input type='checkbox' name='isHandicaped' id='isHandicaped' tmmvc_attribute='isHandicaped' tmmvc_bind_to='checked'>
+<br><br><br>
+<button type='button' tmmvc_click='add'>Add Student</button>&nbsp;&nbsp;
+<button type='button' tmmvc_click='displayHomePage'>Back</button>
+</form>
+</div>
+
+<div tmmvc_if="mode=='U'" >
+<h1>{{{formName}}} Form</h1>
+<br>
+<form action='#' onsubmit='return frmsbt(this)'>
+Name&nbsp;
+<input type='text' id='name' name='name' tmmvc_attribute='name' tmmvc_bind_to='value'>
+<br><br>
+Gender&nbsp;
+<input type='radio' id='male' name='gender' value='M' tmmvc_attribute='gender' tmmvc_bind_to='value'>Male
+&nbsp;&nbsp;&nbsp;&nbsp;
+<input type='radio' id='female' name='gender' value='F' tmmvc_attribute='gender' tmmvc_bind_to='value'>Female
+&nbsp;&nbsp;&nbsp;&nbsp;
+<input type='radio' id='transgender' name='gender' value='T' tmmvc_attribute='gender' tmmvc_bind_to='value'>Transgender
+<br><br>
+City&nbsp;
+<td><select id='city' name='city' tmmvc_attribute='city' tmmvc_bind_to='selectedIndex'>
+<option value='-1'>Select City</option>
+<option value='1'>Ujjain</option>
+<option value='2'>Dewas</option>
+<option value='3'>Indore</option>
+<option value='4'>Bhopal</option>
+<option value='5'>Jaipur</option>
+</select>
+<br><br>
+Handicaped &nbsp;</td>
+<input type='checkbox' name='isHandicaped' id='isHandicaped' tmmvc_attribute='isHandicaped' tmmvc_bind_to='checked'>
+<br><br><br>
+<button type='button' tmmvc_click='update'>Update Student</button>
+<button type='button' tmmvc_click='displayHomePage'>Back</button>
+</form>
+</div>
+
+
+<div tmmvc_if="mode=='D'" >
+<h1>{{{formName}}} Form</h1>
+<br>
+<form action='#'>
+Name&nbsp;
+<input type='text' id='name' name='name' tmmvc_attribute='name' tmmvc_bind_to='value'>
+<br><br><br>
+<button type='button' tmmvc_click='delete'>Delete Student</button>
+<button type='button' tmmvc_click='displayHomePage'>Back</button>
+</form>
+</div>
+
+
+
+
+</center>
+</body>
+</html>
