@@ -16,5 +16,9 @@ MVC Stands for:
 
 ## How to use this framework?
 
+All you need to do is download HCJRock.js file and place it in some js folder. Now include that HCJRock.js in you html file.
 
+<script src='js/HCJRock.js'></script>
+
+Now you are all set to use the framework:
 
